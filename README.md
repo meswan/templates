@@ -47,7 +47,7 @@ docker run -d --name maven-simple-rest-template -p 9080:9080 maven-simple-rest-t
  - simple-rest-template (gradle)
  
 ```
-docker build -f ./simple-rest-template/Dockerfile-gradle -t gradle-simple-rest-template:1.0-SNAPSHOT ./simple-rest-template
+docker build -f ./Dockerfile-gradle -t gradle-simple-rest-template:1.0-SNAPSHOT .
 
 docker run -d --name gradle-simple-rest-template -p 9080:9080 gradle-simple-rest-template:1.0-SNAPSHOT
 ```
