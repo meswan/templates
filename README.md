@@ -7,9 +7,9 @@ This repository contains starter templates for Open Liberty.
 	
 ## Choose a template
  - gradle
-    - This template contains the core files needed for Open Liberty and Gradle to run with an empty file structure.
+    - This template contains the core files needed for Open Liberty and Gradle to run.
  - maven
-    - This template contains the core files needed for Open Liberty and Maven to run with an empty file structure.
+    - This template contains the core files needed for Open Liberty and Maven to run.
   - simple-rest-template	
     - This template contains both Gradle and Maven core files to run a simple greeting REST endpoint.
     - Once started, the endpoint can be reached at http://localhost:9080/app/resource/greeting
