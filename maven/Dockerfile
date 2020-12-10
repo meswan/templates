@@ -1,5 +1,18 @@
 FROM openliberty/open-liberty:kernel-java8-openj9-ubi
 
+LABEL \
+  org.opencontainers.image.authors="Your Name" \
+  org.opencontainers.image.vendor="IBM" \
+  org.opencontainers.image.url="local" \
+  org.opencontainers.image.source="https://github.com/OpenLiberty/templates" \
+  org.opencontainers.image.version="$VERSION" \
+  org.opencontainers.image.revision="$REVISION" \
+  vendor="Open Liberty" \
+  name="myApp" \
+  version="$VERSION-$REVISION" \
+  summary="Starter Project for Open Liberty" \
+  description="This image contains a simple application running with the Open Liberty runtime."
+
 COPY --chown=1001:0 /src/main/liberty/config /config
 
 COPY --chown=1001:0 target/*.war /config/apps
