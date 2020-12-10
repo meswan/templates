@@ -24,7 +24,7 @@ gradle libertyDev
 ## Docker
  - gradle
 ```
-docker build -t gradle-core-template:1.0-SNAPSHOT ./gradle
+docker build -t gradle-core-template:1.0-SNAPSHOT .
 
 docker run -d --name gradle-core-template -p 9080:9080 gradle-core-template:1.0-SNAPSHOT
 ```
@@ -32,7 +32,7 @@ docker run -d --name gradle-core-template -p 9080:9080 gradle-core-template:1.0-
 ```
 mvn package
 
-docker build -t maven-core-template:1.0-SNAPSHOT ./maven
+docker build -t maven-core-template:1.0-SNAPSHOT .
 
 docker run -d --name maven-core-template -p 9080:9080 maven-core-template:1.0-SNAPSHOT
 ```
@@ -40,7 +40,7 @@ docker run -d --name maven-core-template -p 9080:9080 maven-core-template:1.0-SN
 ```
 mvn package
 
-docker build -t maven-simple-rest-template:1.0-SNAPSHOT ./simple-rest-template
+docker build -t maven-simple-rest-template:1.0-SNAPSHOT .
 
 docker run -d --name maven-simple-rest-template -p 9080:9080 maven-simple-rest-template:1.0-SNAPSHOT
 ```
